@@ -1,6 +1,6 @@
 {
   "name": "@yanshoof/types",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Global, organization-scoped types",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
