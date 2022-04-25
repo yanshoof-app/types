@@ -1,3 +1,6 @@
+/**
+ * Represents a timetable that is built from a schedule of another type
+ */
 export interface ITimetable<TLesson, TSchedule> {
   readonly lessons: TLesson[][];
   /**

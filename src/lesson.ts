@@ -1,5 +1,7 @@
 import { DayOfWeek, HourOfDay } from './datetime';
-
+/**
+ * Represents a modification that can be done to a lesson: cancellation, change of teacher, change of classroom, etc.
+ */
 export enum LessonModification {
   None = 0,
   Canceled, // 1
@@ -11,7 +13,7 @@ export enum LessonModification {
 }
 
 /**
- * A combination of an optionsl modification and optional data
+ * A combination of an optional modification and optional data
  */
 export interface IModification {
   modification?: LessonModification;
@@ -62,6 +64,7 @@ export function isAnyLessonObj(obj: unknown): obj is ILesson {
   return typeof obj === 'object' && obj !== null && 'subject' in obj && 'class' in obj;
 }
 
+/** Represents a lesson whose teacher is known in advance */
 export type ITeacherLesson = Omit<ILesson, 'teacher'>;
 
 /**
