@@ -10,5 +10,5 @@ export interface ITimetable<TLesson, TSchedule> {
    * const timetable = new Timetable()
    * timetable.fromSchedule(Schedule);
    */
-  fromSchedule(schedule: TSchedule): void;
+  fromSchedule(schedule: TSchedule): ITimetable<TLesson, TSchedule>;
 }
