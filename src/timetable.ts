@@ -5,7 +5,7 @@ export interface ITimetable<TLesson, TSchedule> {
    * @param schedule the schedule as given by an API
    * @returns the this object, for optional chaining
    * @example
-   * const timetable = new FullTimetable().fromIscool(Schedule);
+   * const timetable = new Timetabke().fromSchedule(Schedule);
    */
-  fromSchedule(schedule: TSchedule): ITimetable<TLesson, TSchedule>;
+  fromSchedule(schedule: TSchedule): this;
 }
