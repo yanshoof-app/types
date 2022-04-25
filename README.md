@@ -1,6 +1,6 @@
 # @yanshoof/types
 
-Global, organization-scoped types
+Global, organization-scoped types and type guards
 
 ## Why this package
 
@@ -40,3 +40,17 @@ In order to reduce code splitting across our platforms, we created a package tha
 ### Timetables
 
 - `interface ITimetable<TLesson, TSchedule>` represents a timetable that is built from a schedule of another type
+
+## Usage
+
+If you only wish to use the types (and not the type guards),
+
+```bash
+npm i --save-dev @yanshoof/types
+```
+
+If you do wish to use the type guards
+
+```bash
+npm i @yanshoof/types
+```
